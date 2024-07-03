@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root 
+{
+    --fundo: #221A25;
+    --rosão: #FF00A8;
+    --meirosa: #F650A9;
+    --rosinhainha: #EA8BCA;
+    --forte: #EB0F79;
+    --medio: #C03B92;
+    --branco: #FFFFFF;
+
+    --font-family: "Roboto Mono", monospace;
+    --font-family2: "Roboto ", monospace;
+}
+*
+
+
+
+
+*{
+    font-weight: 400;
+}
+
+body{
+    color: var(--branco);
+    background-color: var(--fundo);
+    font-family: var(--roboto);
+}
+
+.titulo-principal{
+    font-family: var(--roboto-mono);
+    font-size: 32px;
+}
+
+.titulo-secundario{
+    font-size: 24px;
+}
+
+.conteudo-titulo{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.conteudo-senha{
+    margin-top: 80px; 
+    background: var(--rosinhainha);
+    padding: 24px;
+    border-bottom: 6px solid var(--borda);
+}
+
+#campo-senha{
+    background-color: var(--rosinhainha);
+    border: none;
+    color: var(--branco);
+    font-family: var(--roboto-mono);
+    font-size: 40px;
+    width: 70%;
+}
+
+#campo-senha:focus{
+    outline: none;
+}
+
+.conteudo{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parametro{
+    background-color: var(--fundo);
+    border: 2px solid var(--rosão);
+    margin-top: 32px;
+    padding: 24px;
+}
+
+.parametro-titulo{
+    font-family: var(--roboto-mono);
+    font-size: 28px;
+}
+
+.parametro-senha__titulo{
+    font-size:24px;
+}
+
+.parametro-coluna__senha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.parametro-senha{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.parametro-senha-botoes{
+    display: flex;
+    justify-content: center;
+}
+
+.parametro-senha__botao{
+    background-color: var(--fundo);
+    color: var(--branco);
+    border: 2px solid var(--rosinhainha);
+    padding: 24px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.parametro-senha__texto{
+    padding: 24px;
+    border-top: 2px solid var(--rosinhainha);
+    border-bottom: 2px solid var(--rosinhainha);
+    margin: 0;
+    font-size: 24px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.barra{
+    background-color: var(--fundo);
+    height: 30px;
+    width: 100%;
+}
+.forca{
+    height: 30px;
+    position: relative;
+    bottom: 30px;
+}
+.fraca{
+    width: 25%;
+    background-color: #EA8BCA;
+}
+.media{
+    background-color: #FF00A8;
+    width: 50%;
+}
+.forte{
+    background-color: #EB0F79;
+    width: 100%;
+}
+
+.parametro-senha-textos{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (min-width: 768px) {
+    .parametro-coluna__senha{
+        flex-direction: row;
+    }
+}
